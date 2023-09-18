@@ -1,0 +1,1 @@
+module.exports = (func)=>(req,res,next)=>func(req,res).catch(err=>next(err))
