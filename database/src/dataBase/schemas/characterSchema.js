@@ -1,6 +1,6 @@
-const {schema}= require("mongose");
+const {Schema}= require("mongoose");
 
-const characterSchema = new schema({
+const characterSchema = new Schema({
     _id:String,
     name: String,
     height: String,
