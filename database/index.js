@@ -4,7 +4,7 @@ const {Character,Film,Planet}= require("./src/dataBase")
 //Character.list().then((res)=>console.log(res));
 //Character.getId(1).then((res)=>console.log(res));
 
-Character.insert({
+/* Character.insert({
     _id:"200",
     name: "jorge vega",
     height: "172",
@@ -15,7 +15,7 @@ Character.insert({
     birth_year: "1991",
     gender: "male"
    
-}).then((res)=>console.log(res))
+}).then((res)=>console.log(res)) */
 
 server.listen(8004,()=>{
     console.log("database server on port 8004")
