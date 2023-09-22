@@ -14,7 +14,7 @@ if(model === "Character"){
     films:obj.films
   };
   
-}else if(model === "Films"){
+}else if(model === "Film"){
   return {
     _id: obj._id,
     title:obj.title,
@@ -37,7 +37,7 @@ if(model === "Character"){
     gravity:obj.gravity,
     terrain:obj.terrain,
     surface_water:obj.surface_water,
-    residents:objresidents,
+    residents:obj.residents,
     films:obj.films
   }
  
