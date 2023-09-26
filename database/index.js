@@ -1,19 +1,8 @@
 const server = require("./src/server");
+const {PORT_DATA_BASE} = require("./src/config/env")
 
-server.listen(8004,()=>{
-    console.log("database server on port 8004")
+
+server.listen(PORT_DATA_BASE,()=>{
+    console.log(`database server on port ${PORT_DATA_BASE}`)
 })
 
-
-
-
-/* 
-Films.find()
-.populate("characters",["name"])
-.populate("planets",["name"])
-.then((res)=>console.log(res));
-
-Planets.find()
-.populate("residents",["name"])
-.populate("films",["name"])
-.then((res)=>console.log(res)); */
