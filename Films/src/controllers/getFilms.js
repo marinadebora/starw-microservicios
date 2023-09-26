@@ -1,7 +1,8 @@
 const { response }= require("../utils");
-const axios =require("axios")
+const Films = require("../data")
+
 module.exports = async (req, res) =>{    
-  const films =  await axios.get(`http://database:8004/Film`) 
+  const films =  await Films.list();
   response(res, 200, films.data)
  
  
