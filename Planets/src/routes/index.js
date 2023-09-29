@@ -7,6 +7,7 @@ const router = Router();
 
 
 router.get("/",controllers.getPlanets );
+router.get("/:id",controllers.getId );
 router.post("/",middleware.characterValidation ,controllers.createPlanets);
 
 module.exports = router;

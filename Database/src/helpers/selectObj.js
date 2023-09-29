@@ -1,4 +1,5 @@
 module.exports = (obj,model)=>{
+  
 if(model === "Character"){
  return  {
     _id: obj._id,

@@ -3,7 +3,8 @@ const { response }= require("../utils");
 
 
 module.exports = async(req,res)=>{
-  const newPlanets = await Planets.create();
+  const newPlanets = req.body
+   await Planets.insert(newPlanets);
   response(res,200,newPlanets)
 
 }
