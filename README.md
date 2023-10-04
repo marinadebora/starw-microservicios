@@ -6,3 +6,5 @@
 
 ## Marina Débora Carabajal
 
+IP externa: 34.82.142.45
+
